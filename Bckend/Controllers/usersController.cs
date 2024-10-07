@@ -4,9 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bckend.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class usersController(AppDataContext db): ControllerBase
+
+public class usersController(AppDataContext db): baseAPiController
 {
     // [HttpGet("{ID}")]
     // public ActionResult <IEnumerable<Appuser>> GetUsers(int id)
