@@ -130,3 +130,12 @@
 /Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/runtimes/win7-x64/native/sqlite3.dll
 /Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/runtimes/win7-x86/native/sqlite3.dll
 /Users/ahmed_dahir/FBAcademyAP/Bckend/obj/Debug/net8.0/Bckend.sourcelink.json
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.Bcl.TimeProvider.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ahmed_dahir/FBAcademyAP/Bckend/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
