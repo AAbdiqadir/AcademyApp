@@ -1,0 +1,28 @@
+
+<div class="container mt-5">
+  <div style="text-align: center;">
+
+    @if(!registerMode){
+      <h1 class="fw-bolder">Welcome to Scrolling Nav</h1>
+      <p class="lead">A functional Bootstrap 5 boilerplate for one page scrolling websites</p>
+      <div>
+        <button class="btn btn-lg btn-light" (click)="registetoggle()">Start scrolling!</button>
+      </div>
+    } @else {
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <button class="btn btn-lg btn-light" (click)="registetoggle()">Start scrolling!</button>
+            <p class="lead"> Register form goes here</p>
+          </div>
+
+        </div>
+
+      </div>
+    }
+
+
+
+
+</div>
+</div>

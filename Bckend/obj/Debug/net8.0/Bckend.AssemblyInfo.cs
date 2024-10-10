@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bckend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0b97bc87adfd28a7de692191a6f53bff8fd7678")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46f0bb3a3613589761836ff3b17008fa5f1bbd03")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bckend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bckend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,1 +1,49 @@
-<p>nav works!</p>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid m-lg-3" >
+    <a class="navbar-brand" href="#">Carousel</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+      @if (accountService.currentuser()){
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      }
+      @if (accountService.currentuser()){
+        <div dropdown class="dropdown">
+          <a dropdownToggle class="dropdowntoggle text-light"> Welcome </a>
+          <div *dropdownMenu class = "dropdown-menu drop_style">
+            <a class = "dropdown-item"> Edit profile</a>
+            <div class="dropdown-divider"></div>
+            <a class = "dropdown-item" (click) = "logout()">logout</a>
+          </div>
+
+        </div>
+      }
+
+      @if (!accountService.currentuser()){
+        <form #loginform = "ngForm" (ngSubmit)="login()"
+              class="d-flex" role="search">
+          <input class="form-control me-2"
+                 name = "username" [(ngModel)]="model.username"
+                 placeholder="Username" aria-label="Search">
+          <input
+            name = "password" [(ngModel)]="model.password"
+            class="form-control me-2" placeholder="Password" type = "password" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Login</button>
+        </form>
+      }
+
+    </div>
+  </div>
+</nav>
