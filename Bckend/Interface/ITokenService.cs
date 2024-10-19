@@ -5,5 +5,4 @@ namespace Bckend.Interface;
 public interface ITokenService
 {
     string CreateToken(Appuser appuser);
-    
 }

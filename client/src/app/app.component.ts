@@ -6,21 +6,21 @@ import {NavComponent} from './nav/nav.component';
 
 import { AccountService } from './_services/account.service';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, NavComponent, HomeComponent],
+  imports: [RouterOutlet, CommonModule, NavComponent, HomeComponent, RegisterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  http = inject( HttpClient);
   title = 'Client';
   private accountService = inject(AccountService)
 
-  users: any;
+
 
   setuser(){
     const userS= localStorage.getItem("user");
@@ -33,17 +33,9 @@ export class AppComponent implements OnInit {
 
   }
 
-  getuser(){
-    this.http.get('http://localhost:5217/users').subscribe({
-        next: response => this.users = response,
-        error: err => console.log(err),
-        complete: () => console.log('response complete')
-      }
 
-    )
-  }
   ngOnInit(): void {
-    this.getuser();
+
     this.setuser()
 
   }

@@ -4,9 +4,10 @@ namespace Bckend.DTO;
 
 public class RegisterDTO
 {
-    [Required]
-    public  String username { get; set; }
+    [Required] 
+    public  String Username { get; set; }
     
-    [Required]
-    public String password { get; set; }
+    [Required] 
+    [StringLength(8, MinimumLength = 5)]
+    public String Password { get; set; }
 }

@@ -1,7 +1,7 @@
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark  bg-dark">
   <div class="container-fluid m-lg-3" >
-    <a class="navbar-brand" href="#">Carousel</a>
+    <a class="navbar-brand" routerLink = "/" routerLinkActive= "active" href="#">Carousel</a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,19 +9,19 @@
       @if (accountService.currentuser()){
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a routerLink = "/lists" class="nav-link active" routerLinkActive= "active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a routerLink = "/members" class="nav-link" routerLinkActive= "active" href="#">Link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a routerLink = "/messages" class="nav-link " routerLinkActive= "active" >Disabled</a>
           </li>
         </ul>
       }
       @if (accountService.currentuser()){
         <div dropdown class="dropdown">
-          <a dropdownToggle class="dropdowntoggle text-light"> Welcome </a>
+          <a dropdownToggle class="dropdowntoggle text-light"> Welcome {{accountService.currentuser()?.username | titlecase}} </a>
           <div *dropdownMenu class = "dropdown-menu drop_style">
             <a class = "dropdown-item"> Edit profile</a>
             <div class="dropdown-divider"></div>

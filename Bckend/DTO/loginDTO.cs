@@ -4,9 +4,7 @@ namespace Bckend.DTO;
 
 public class loginDTO
 {
-    [Required]
-    public  String Username { get; set; }
-    
-    [Required]
-    public String Password { get; set; }
+    [Required] public string Username { get; set; }
+
+    [Required] public string Password { get; set; }
 }

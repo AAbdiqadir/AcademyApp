@@ -5,22 +5,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bckend.Controllers;
 
-
-public class usersController(AppDataContext db): baseAPiController
+public class usersController(AppDataContext db) : baseAPiController
 {
     [Authorize]
     [HttpGet("{ID}")]
-    public ActionResult <IEnumerable<Appuser>> GetUsers(int id)
+    public ActionResult<IEnumerable<Appuser>> GetUsers(int id)
     {
         var users = db.Appusers.ToList();
-    
+
         return users.ToList();
     }
-    
+
     [AllowAnonymous]
     [HttpGet]
-    
-    public async Task<ActionResult <IEnumerable<Appuser>>> GetUser()
+    public async Task<ActionResult<IEnumerable<Appuser>>> GetUser()
     {
         var users = await db.Appusers.ToListAsync();
 

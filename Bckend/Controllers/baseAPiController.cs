@@ -4,9 +4,6 @@ namespace Bckend.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-
-public class baseAPiController: ControllerBase
+public class baseAPiController : ControllerBase
 {
-    
-    
 }
